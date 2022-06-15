@@ -1,4 +1,4 @@
-# Etch-a-Sketch Project
+# Etch a Sketch Project
 This is an app that replicates the experience of using an etch-a-sketch, but digitally. The classic hovering to change colour & reset wipe are there, along with the new possibilities opened up by its digital space: a changeable grid and colour variation.
 
 **Link to project:** https://sucrion.github.io/etch-a-sketch/
