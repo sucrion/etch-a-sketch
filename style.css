@@ -22,19 +22,23 @@
   /*******************************************/
   
   body {
-  
+    background-color: #887974;
   }
   
-  
-  /******************************************
-  /* LAYOUT
-  /*******************************************/
-  header {
-  
+  #containerDiv {
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+    height: 30em;
   }
-  
-  footer {
-  
+
+  .insideDiv {
+    background-color: #f1f0e8;
+    width: 25%;
+    height: 25%;
   }
   
   /******************************************
