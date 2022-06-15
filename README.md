@@ -9,7 +9,7 @@ This is an app that replicates the experience of using an etch-a-sketch, but dig
 
 This project focused on making use of JavaScript functionality to create an interactive app. The layout is straightforward; all the complexity is in the JS, which makes use of or manipulates almost every element on the page. 
 
-## Optimizations
+## Optimizations:
 
 Though the project is inherently limited in scope, improvements are possible. Most optimizations would involve giving more options to the user, such as selecting the specific colours involved (for both base and hovered squares), changing the number of squares the user can interact with at once (e.g. 4 squares at a time), etc. 
 
