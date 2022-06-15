@@ -31,7 +31,7 @@ function colorToggle() {
 
 //user actions
 function trail() {
-    this.style.backgroundColor = '#250609';
+    this.style.backgroundColor = '#382f30';
 }
 function trailColor() {
     //random hex
