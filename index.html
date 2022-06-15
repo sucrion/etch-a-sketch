@@ -18,13 +18,18 @@
 		<header>
 			<h1>Etch a Sketch</h1>
 		</header>
+		<div id="containerDiv"></div>
 		<div id="uiDiv">
 			<label for="gridSize">Grid size:</label>
 			<input id="gridSize" name="gridSize" type="number" min="1" max="100">
 			<button id="updateGrid">Update grid</button>
+			<p>Maximum grid size is 100. Note that larger grids can take some time to load.</p>
 			<button id="colorBtn">Colourful mode</button>
+			<button id="resetBtn">Reset to default</button>
 		</div>
-        <div id="containerDiv"></div>
+		<footer>
+			<p>Made by <a href="https://alexdurlut.netlify.app/">Alex Durlut</a></p>
+		</footer>
 
 		<script type="text/javascript" src="main.js"></script>
 	</body>

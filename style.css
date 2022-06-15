@@ -23,10 +23,26 @@
   
   body {
     background-color: #8d3131;
-    color: #f1f0e8;
+    color: #faefd7;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  header {
+    background-color: #691f1f;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 230%;
+  }
+
+  a {
+    color: #faefd7;
   }
   
   #containerDiv {
@@ -35,11 +51,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 33em;
-    height: 33em;
+    width: 30em;
+    height: 30em;
     border: 10px solid #f1f0e8;
     border-radius: 10px;
-    margin-top: 2em;
+    margin: 2em 0 2em 0;
   }
 
   .insideDiv {
@@ -48,3 +64,43 @@
     height: 25%;
   }
   
+  #uiDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 20em;
+  }
+
+  label {
+    width: fit-content;
+    margin-top: 0.3em;
+  }
+
+  input {
+    width: 5em;
+  }
+
+  button {
+    width: 40%;
+    padding: 0.7em 0;
+    background-color: #f0e0ae;
+    border: none;
+    border-radius: 5px;
+  }
+
+  #colorBtn, #resetBtn {
+    margin-top: 1.2em;
+    width: 100%;
+  }
+
+  #resetBtn {
+    margin-bottom: 5em;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #691f1f;
+  }

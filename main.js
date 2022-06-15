@@ -11,7 +11,8 @@ for (let i = 1; i <= 16; i++) {
 
 //event listeners
 document.querySelector('#updateGrid').addEventListener('click', gridUpdate);
-document.querySelector('#colorBtn').addEventListener('click', colorToggle)
+document.querySelector('#colorBtn').addEventListener('click', colorToggle);
+document.querySelector('#resetBtn').addEventListener('click', resetGrid)
 
 function trailAttach() {document.querySelectorAll('.insideDiv').forEach(item => item.addEventListener('mouseover', trail))
 }
@@ -53,3 +54,12 @@ function gridUpdate() {
     }
 }
 
+function resetGrid() {
+    contDiv.innerHTML = '';
+    for (let i = 1; i <= 16; i++) {
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('insideDiv');
+        contDiv.appendChild(newDiv);    
+        trailAttach();
+    }
+}
