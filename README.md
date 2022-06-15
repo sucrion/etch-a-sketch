@@ -12,7 +12,8 @@ This project focused on making use of JavaScript functionality to create an inte
 ## Optimizations
 
 Though the project is inherently limited in scope, improvements are possible. Most optimizations would involve giving more options to the user, such as selecting the specific colours involved (for both base and hovered squares), changing the number of squares the user can interact with at once (e.g. 4 squares at a time), etc. 
+Another major optimization would involve making the page usable on mobile, since it is based on mouse activity for now.
 
 ## Lessons Learned:
 
-The project notably served as an interesting way to practice improving interactivity of a page (different types of events, managing changes in CSS through JS, interactive options for mobile users, etc). 
+The project notably served as an interesting way to practice improving interactivity of a page (different types of events, managing changes in CSS through JS, how to handle toggling certain things, etc). 
