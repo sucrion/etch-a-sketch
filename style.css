@@ -22,17 +22,24 @@
   /*******************************************/
   
   body {
-    background-color: #887974;
+    background-color: #8d3131;
+    color: #f1f0e8;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
   }
   
   #containerDiv {
-    background-color: aliceblue;
+    background-color: #f1f0e8;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 30em;
-    height: 30em;
+    width: 33em;
+    height: 33em;
+    border: 10px solid #f1f0e8;
+    border-radius: 10px;
+    margin-top: 2em;
   }
 
   .insideDiv {
@@ -40,8 +47,4 @@
     width: 25%;
     height: 25%;
   }
-  
-  /******************************************
-  /* ADDITIONAL STYLES
-  /*******************************************/
   

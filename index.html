@@ -6,16 +6,23 @@
   	<meta name="keywords" content="one, two, three">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Etch-a-Sketch</title>
+		<title>Etch a Sketch</title>
 
 		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<header>
+			<h1>Etch a Sketch</h1>
+		</header>
 		<div id="uiDiv">
 			<label for="gridSize">Grid size:</label>
 			<input id="gridSize" name="gridSize" type="number" min="1" max="100">
 			<button id="updateGrid">Update grid</button>
+			<button id="colorBtn">Colourful mode</button>
 		</div>
         <div id="containerDiv"></div>
 

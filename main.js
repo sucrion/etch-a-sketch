@@ -1,20 +1,41 @@
 //names
 let contDiv = document.querySelector('#containerDiv');
-let hoverColor = '#250609';
 
-//making the grid
+//making the initial grid
 for (let i = 1; i <= 16; i++) {
     let newDiv = document.createElement('div');
     newDiv.classList.add('insideDiv');
-    newDiv.addEventListener('mouseover', trail);
-    contDiv.appendChild(newDiv);
+    contDiv.appendChild(newDiv);    
+    trailAttach();
 }
 
+//event listeners
 document.querySelector('#updateGrid').addEventListener('click', gridUpdate);
+document.querySelector('#colorBtn').addEventListener('click', colorToggle)
+
+function trailAttach() {document.querySelectorAll('.insideDiv').forEach(item => item.addEventListener('mouseover', trail))
+}
+
+function colorToggle() {
+    document.querySelectorAll('.insideDiv').forEach(item => {
+        item.classList.toggle('colorful');
+        if (item.classList.contains('colorful')) {
+            item.removeEventListener('mouseover', trail);
+            item.addEventListener('mouseover', trailColor)    
+        } else {
+            item.removeEventListener('mouseover', trailColor);
+            item.addEventListener('mouseover', trail)    
+        }
+    })
+}
 
 //user actions
 function trail() {
-    // hoverColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    this.style.backgroundColor = '#250609';
+}
+function trailColor() {
+    //random hex
+    let hoverColor = '#' + Math.floor(Math.random()*16777215).toString(16);
     this.style.backgroundColor = hoverColor;
 }
 
@@ -25,10 +46,10 @@ function gridUpdate() {
     for (let i = 1; i <= gridSize**2; i++) {
         let newDiv = document.createElement('div');
         newDiv.classList.add('insideDiv');
-        newDiv.addEventListener('mouseover', trail);
         newDiv.style.width = newSize + '%';
         newDiv.style.height = newSize + '%';
         contDiv.appendChild(newDiv);
+        trailAttach();
     }
 }
 
