@@ -12,6 +12,9 @@ This project focused on making use of JavaScript functionality to create an inte
 ## Optimizations
 
 Though the project is inherently limited in scope, improvements are possible. Most optimizations would involve giving more options to the user, such as selecting the specific colours involved (for both base and hovered squares), changing the number of squares the user can interact with at once (e.g. 4 squares at a time), etc. 
+
+Additionally, it might be a better user experience to hold down a mouse button to change the colour of a square, rather than move over it as it is now. This could also allow for erasing with a second mouse button, for example.
+
 Another major optimization would involve making the page usable on mobile, since it is based on mouse activity for now.
 
 ## Lessons Learned:
